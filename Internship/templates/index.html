@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% block title  %} Home{% endblock title  %}
+{% block body  %}
+
+<div class="container-fluid  px-0"><div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://source.unsplash.com/1400x600/?planets" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://source.unsplash.com/1400x600/?planets" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1400x600/?planets" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div></div>
+      
+
+      <div class="container-fluid my-4 px-0"><div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> {% endcomment %}
+            <img src="data:image/jpeg;base64,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" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="...">
+            <h2 class="fw-normal">Black Hole</h2>
+            <p>They're extremely dense, with such strong gravitational attraction that not even light can escape their grasp.</p>
+            <p><a class="btn btn-secondary" href="https://spaceplace.nasa.gov/black-holes/en/">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+
+
+          <div class="col-lg-4">
+            {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> {% endcomment %}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3rgpnuRGZlpD9Ofi5KyotBi0Cs_1F2I0eA&usqp=CAU" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="...">
+            <h2 class="fw-normal">JWST</h2>
+            <p>James Webb Space Telescope is extremely powerful longer with good wavelength coverage and greatly improved sensitivity.</p>
+            <p><a class="btn btn-secondary" href="https://www.nasa.gov/mission_pages/webb/main/index.html">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> {% endcomment %}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB3LhhGVtbbzASrrGSfhPgSS3QsKy9-Oc9ow&usqp=CAU" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="...">
+            <h2 class="fw-normal">White Hole</h2>
+            <p>White hole is a bizarre cosmic object which is intensely bright, and from which matter gushes rather than disappears</p>
+            <p><a class="btn btn-secondary" href="https://theconversation.com/curious-kids-can-black-holes-become-white-holes-176034">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider-fluid ">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Curious about universe. <span class="text-muted">Explore the space with me!!</span></h2>
+            <p class="lead">“I thought the attractions of being an astronaut were actually, not so much the moon, but flying in a completely new medium.”</p>
+          </div>
+          <div class="col-md-5">
+            {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> {% endcomment %}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cNiHwgSrPfnNwBV_raqrvD84EPLNbPJs1g&usqp=CAU" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="...">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading fw-normal lh-1">Oh yeah,Time travel is for real <span class="text-muted">Look after the facts.</span></h2>
+            <p class="lead">Its possible to see the past with the help of light but not possible to visit the past ,black hole makes it possible to travel in future as it is heavey it bends the time curve and thus the time gets slow.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> {% endcomment %}
+            <img src="https://media2.giphy.com/media/1P1rDw5ceV2lelMIpr/200w.webp?cid=ecf05e47ymaz015zcir0hw85cznt388zfo3x3yy6x04d4kko&rid=200w.webp&ct=g" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="...">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider ">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">Star Gazing.  <span class="text-muted">Look up into the sky , you find peace.</span></h2>
+            <p class="lead">Stargazing – the simple act of looking at the stars – is perhaps the ultimate social-distancing experience, a chance to reconnect with nature and the world without having to leave your yard, balcony, porch, or sidewalk.
+
+                “The stars remind us that we are part of a larger universe,”</p>
+          </div>
+          <div class="col-md-5">
+            {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> {% endcomment %}
+            <img src="data:image/jpeg;base64,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" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="...">
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+{% endblock body  %}
+ <!-- Facebook -->
+    <i class="fab fa-facebook-f"></i>
+    
+    <!-- Twitter -->
+    <i class="fab fa-twitter"></i>
+    
+    <!-- Google -->
+    <i class="fab fa-google"></i>
+    
+    <!-- Instagram -->
+    <i class="fab fa-instagram"></i>
+    
+    <!-- Linkedin -->
+    <i class="fab fa-linkedin-in"></i>
+    
+    <!-- Pinterest -->
+    <i class="fab fa-pinterest"></i>
+    
+    <!-- Vkontakte -->
+    <i class="fab fa-vk"></i>
+    
+    <!-- Stack overflow -->
+    <i class="fab fa-stack-overflow"></i>
+    
+    <!-- Youtube -->
+    <i class="fab fa-youtube"></i>
+    
+    <!-- Slack -->
+    <i class="fab fa-slack-hash"></i>
+    
+    <!-- Github -->
+    <i class="fab fa-github"></i>
+    
+    <!-- Dribbble -->
+    <i class="fab fa-dribbble"></i>
+    
+    <!-- Reddit -->
+    <i class="fab fa-reddit-alien"></i>
+    
+    <!-- Whatsapp -->
+    <i class="fab fa-whatsapp"></i>
+
